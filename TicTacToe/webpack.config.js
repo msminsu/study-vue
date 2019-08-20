@@ -9,7 +9,10 @@ module.exports = {
 	entry: {
 		// app: './main.js',
 		app : path.join(__dirname, 'main.js')
-	},
+	},	
+	devServer: {
+		contentBase: './'
+	  },
 	module: {
 		//어떻게 합칠건지 .vue 파일을 js 파일로 합쳐줌
 		rules:[{//  vue  담당

@@ -22,6 +22,7 @@ const scores ={
 	보:-1
 };
 const computerChoice = (imgCoord) =>{
+	console.log(imgCoord)
 	return Object.entries(rspCoords).find(function (v) {
 		return v[1] === imgCoord;
 	})[0];
