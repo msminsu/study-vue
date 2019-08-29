@@ -9,9 +9,17 @@
 
 <script>
   import { mapState } from 'vuex';
+<<<<<<< HEAD
   import store, { INCREMENT_TIMER } from './store';
   import TableComponent from './TableComponent';
   import MineForm from './MineForm';
+=======
+
+  import store, { INCREMENT_TIMER } from './store';
+  import TableComponent from './TableComponent';
+  import MineForm from './MineForm';
+
+>>>>>>> 41b9ecfb426b9fd9ce0287109c43607f7478bab2
   let interval;
   export default {
     store,
@@ -23,6 +31,10 @@
       ...mapState(['timer', 'result', 'halted']),
     },
     methods: {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 41b9ecfb426b9fd9ce0287109c43607f7478bab2
     },
     watch: {
       halted(value, oldValue) {
@@ -48,4 +60,8 @@
     height: 40px;
     text-align: center;
   }
+<<<<<<< HEAD
 </style>
+=======
+</style>
+>>>>>>> 41b9ecfb426b9fd9ce0287109c43607f7478bab2

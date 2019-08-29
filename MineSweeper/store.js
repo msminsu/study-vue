@@ -178,4 +178,8 @@ export default new Vuex.Store({ // import store from './store';
       state.timer += 1;
     },
   }, // state를 수정할 때 사용해요. 동기적으로
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 41b9ecfb426b9fd9ce0287109c43607f7478bab2

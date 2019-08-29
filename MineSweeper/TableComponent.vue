@@ -17,6 +17,10 @@
 <script>
   import { mapState } from 'vuex';
   import { CLICK_MINE, CODE, FLAG_CELL, NORMALIZE_CELL, OPEN_CELL, QUESTION_CELL } from './store';
+<<<<<<< HEAD
+=======
+
+>>>>>>> 41b9ecfb426b9fd9ce0287109c43607f7478bab2
   export default {
     computed: {
       ...mapState(['tableData', 'halted']),
@@ -107,4 +111,8 @@
       }
     }
   };
+<<<<<<< HEAD
 </script>
+=======
+</script>
+>>>>>>> 41b9ecfb426b9fd9ce0287109c43607f7478bab2
