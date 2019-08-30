@@ -2,7 +2,7 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const path = require('path');
 module.exports = {
 	mode:'development',//
-	devtool:'eval',// 처리속도
+	 devtool:'eval',// 처리속도
 	resolve:{// 확장자들  불러올때 생약가능
 		extensions:['.js', '.vue']
 	},
@@ -11,6 +11,7 @@ module.exports = {
 		app : path.join(__dirname, 'main.js')
 	},	
 	devServer: {
+		// inline: false,
 		contentBase: './'
 	  },
 	module: {
