@@ -81,22 +81,35 @@ export default new Vuex.Store({ // import store from './store';
       state.result = '';
     },
     [OPEN_CELL](state, { row, cell }) {
-      
+      Vue.set(state.tableData[row], cell, counted.length);
     },
     [CLICK_MINE](state, { row, cell }) {
-     
+      state.halted = true;
+      Vue.set(state.tableData[row], cell, CODE.CLICKED_MINE);
     },
     [FLAG_CELL](state, { row, cell }) {
-     
+      if (state.tableData[row][cell] === CODE.MINE) {
+        Vue.set(state.tableData[row], cell, CODE.FLAG_MINE);
+      } else {
+        Vue.set(state.tableData[row], cell, CODE.FLAG);
+      }
     },
     [QUESTION_CELL](state, { row, cell }) {
-    
+      if (state.tableData[row][cell] === CODE.FLAG_MINE) {
+        Vue.set(state.tableData[row], cell, CODE.QUESTION_MINE);
+      } else {
+        Vue.set(state.tableData[row], cell, CODE.QUESTION);
+      }
     },
     [NORMALIZE_CELL](state, { row, cell }) {
-     
+      if (state.tableData[row][cell] === CODE.QUESTION_MINE) {
+        Vue.set(state.tableData[row], cell, CODE.MINE);
+      } else {
+        Vue.set(state.tableData[row], cell, CODE.NORMAL);
+      }
     },
     [INCREMENT_TIMER](state) {
-     
+     state.timer += 1;
     },
   }, // state를 수정할 때 사용해요. 동기적으로
 });
