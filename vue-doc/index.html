@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	</head>
+	<body>
+		<div id="app" v-cloak>
+			<ol >
+				<li v-for="item,index in list" :key="index">{{item}}</li>
+			</ol>
+
+			<div v-if="true" v-for="con in 10" >
+				{{con}}
+			</div>
+
+		</div>
+		
+	</body>
+<script>
+
+var app = new Vue({
+	el: '#app',
+	data: {
+		name: `<li>이탈릭</li>`,
+		visible: false,
+		list:[
+			'바나나','사과','딸기','복숭아'
+		],
+		obj:{
+			name: 'ams',
+			type: 'kal',
+			name: 'min'
+		}
+	}
+});
+</script>
+<style>
+[v-cloak]{
+	display: none;
+}
+</style>
+</html> 

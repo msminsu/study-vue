@@ -1,0 +1,63 @@
+{
+  "name": "storybook",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@storybook/addon-a11y": "^5.2.1",
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-backgrounds": "^5.2.1",
+    "@storybook/addon-knobs": "^5.2.1",
+    "@storybook/addon-notes": "^5.2.1",
+    "@storybook/addon-storysource": "^5.2.1",
+    "@storybook/addon-viewport": "^5.2.1",
+    "@storybook/addons": "^5.2.1",
+    "@storybook/cli": "^5.2.1",
+    "@storybook/vue": "^5.2.1",
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "babel-preset-vue": "^2.0.2",
+    "bootstrap-vue": "^2.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "storybook-addon-vue-info": "^1.3.1",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
