@@ -5,8 +5,12 @@
     <h3>Seoul Users {{seouls}}({{$store.getters.percentOfSeoul}}%)</h3>
     <v-list two-line>
       <!-- $store.status.allUsers 를 mapState로 사용 -->
+
+      <!-- 여기 있던 데이터를 store.js state로 옮기고 > $store.state.allUsers 로 접근가능
+      mapState import 하면 기존 처럼 allUsers로 접근 가능 -->
+
       <v-list-tile 
-        v-for="(user, index) in allUsers" #mapState사용
+        v-for="(user, index) in allUsers"
         :key="index"
         avatar
       >
